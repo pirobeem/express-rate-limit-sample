@@ -12,10 +12,10 @@ you can use yarn or npm command.
 
 # check
 * First access to "localhost:3000" and you can see "ExpressXXX"
-* Second access(within 10seconds from first access) and you can see "Too many requests, please try again later." and http response code "429".
+* Second access(within 10seconds from first access) and you can see "Too many requests, please try again later." and get http response code as 429.
 
 # change limit config
-You can chenge [app.js](https://github.com/pirobeem/express-rate-limit-sample/blob/master/app.js)
+You can chenge config in [app.js](https://github.com/pirobeem/express-rate-limit-sample/blob/master/app.js).
 ```
 const limiter = rateLimit({
   windowMs: 10000, // maxのリクエストを許可する最大ミリ秒
